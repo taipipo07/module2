@@ -1,6 +1,6 @@
 package ss1_all_about_java_cau_2;
 
-public class Chuyen_Doi_Tien_Te {
+public class ChuyenDoiTienTe {
     public static void main(String[] args) {
         java.util.Scanner sc = new java.util.Scanner(System.in);
         double rate = 23000;
