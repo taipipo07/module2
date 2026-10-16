@@ -1,8 +1,10 @@
-package ss1_all_about_java_cau_2;
+package ss1_all_about_java;
+
+import java.util.Scanner;
 
 public class ChuyenDoiTienTe {
     public static void main(String[] args) {
-        java.util.Scanner sc = new java.util.Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         double rate = 23000;
         double usd;
         System.out.print("Nhap so tien USD: ");
