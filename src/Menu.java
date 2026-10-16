@@ -1,5 +1,3 @@
-package du_an_module2;
-
 import java.util.Scanner;
 
 public class Menu {
