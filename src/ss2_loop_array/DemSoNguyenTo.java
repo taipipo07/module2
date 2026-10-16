@@ -1,7 +1,7 @@
 package ss2_loop_array;
 
 public class DemSoNguyenTo {
-    private static void main(String[] args) {
+    private static void main1(String[] args) {
         int numbers = 20;
 
         int count = 0;
