@@ -1,7 +1,7 @@
 package ss2_loop_array;
 
 public class SoNguyenToNhoHonMotTram {
-    private static void main2(String[] args) {
+    public static void main (String[] args) {
         int numbers = 30;
         int count = 0;
 
