@@ -1,4 +1,4 @@
-package ss4_class_opject;
+package ss4_class_opject.project;
 
 import java.util.Scanner;
 

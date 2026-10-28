@@ -1,4 +1,4 @@
-package ss4_class_opject;
+package ss4_class_opject.project;
 
 public class StudentManager {
     public Student[] studentsList= new Student[100];
