@@ -1,4 +1,4 @@
-package ss4_class_opject.project;
+package project;
 
 public class Student {
     private int id;
