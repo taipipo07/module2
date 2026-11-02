@@ -3,6 +3,8 @@ package ss6_inheritance_in_java.Point2dAndPoint3d;
 public class Point3d extends Point2d {
     private float z = 0.0f;
 
+    public Point3d() {
+    }
     public float getZ() {
         return z;
     }
@@ -21,8 +23,8 @@ public class Point3d extends Point2d {
 
     public float[] getXYZ() {
         float[] arr = new float[3];
-        arr[0] = x;
-        arr[1] = y;
+        arr[0] = getX();
+        arr[1] = getY();
         arr[2] = z;
         return arr;
     }
