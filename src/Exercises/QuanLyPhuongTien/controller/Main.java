@@ -1,14 +1,14 @@
-package Exercises.QuanLyPhuongTien.Controller;
+package Exercises.QuanLyPhuongTien.controller;
 
-import Exercises.QuanLyPhuongTien.Repository.BikeRepository;
-import Exercises.QuanLyPhuongTien.Repository.CarRepository;
-import Exercises.QuanLyPhuongTien.Repository.TruckRepository;
-import Exercises.QuanLyPhuongTien.Service.BikeService;
-import Exercises.QuanLyPhuongTien.Service.CarService;
-import Exercises.QuanLyPhuongTien.Service.TruckService;
-import Exercises.QuanLyPhuongTien.View.BikeView;
-import Exercises.QuanLyPhuongTien.View.CarView;
-import Exercises.QuanLyPhuongTien.View.TruckView;
+import Exercises.QuanLyPhuongTien.repository.BikeRepository;
+import Exercises.QuanLyPhuongTien.repository.CarRepository;
+import Exercises.QuanLyPhuongTien.repository.TruckRepository;
+import Exercises.QuanLyPhuongTien.service.BikeService;
+import Exercises.QuanLyPhuongTien.service.CarService;
+import Exercises.QuanLyPhuongTien.service.TruckService;
+import Exercises.QuanLyPhuongTien.view.BikeView;
+import Exercises.QuanLyPhuongTien.view.CarView;
+import Exercises.QuanLyPhuongTien.view.TruckView;
 
 import java.util.Scanner;
 

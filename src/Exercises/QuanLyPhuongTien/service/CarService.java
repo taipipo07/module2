@@ -1,7 +1,7 @@
-package Exercises.QuanLyPhuongTien.Service;
+package Exercises.QuanLyPhuongTien.service;
 
-import Exercises.QuanLyPhuongTien.Entity.Car;
-import Exercises.QuanLyPhuongTien.Repository.ICarRepository;
+import Exercises.QuanLyPhuongTien.entity.Car;
+import Exercises.QuanLyPhuongTien.repository.ICarRepository;
 import java.util.List;
 
 public class CarService implements ICarService {

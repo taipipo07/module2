@@ -1,7 +1,7 @@
-package Exercises.QuanLyPhuongTien.View;
+package Exercises.QuanLyPhuongTien.view;
 
-import Exercises.QuanLyPhuongTien.Entity.Truck;
-import Exercises.QuanLyPhuongTien.Service.ITruckService;
+import Exercises.QuanLyPhuongTien.entity.Truck;
+import Exercises.QuanLyPhuongTien.service.ITruckService;
 
 import java.util.List;
 import java.util.Scanner;

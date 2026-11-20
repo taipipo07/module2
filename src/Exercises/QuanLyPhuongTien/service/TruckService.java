@@ -1,7 +1,7 @@
-package Exercises.QuanLyPhuongTien.Service;
+package Exercises.QuanLyPhuongTien.service;
 
-import Exercises.QuanLyPhuongTien.Entity.Truck;
-import Exercises.QuanLyPhuongTien.Repository.ITruckRepository;
+import Exercises.QuanLyPhuongTien.entity.Truck;
+import Exercises.QuanLyPhuongTien.repository.ITruckRepository;
 import java.util.List;
 
 public class TruckService implements ITruckService {

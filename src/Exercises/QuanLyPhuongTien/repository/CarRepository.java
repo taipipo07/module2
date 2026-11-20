@@ -1,6 +1,6 @@
-package Exercises.QuanLyPhuongTien.Repository;
+package Exercises.QuanLyPhuongTien.repository;
 
-import Exercises.QuanLyPhuongTien.Entity.Car;
+import Exercises.QuanLyPhuongTien.entity.Car;
 import java.util.ArrayList;
 import java.util.List;
 

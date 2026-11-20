@@ -1,4 +1,4 @@
-package Exercises.QuanLyPhuongTien.Entity;
+package Exercises.QuanLyPhuongTien.entity;
 
 public abstract class Vehicle {
     private String licensePlate;

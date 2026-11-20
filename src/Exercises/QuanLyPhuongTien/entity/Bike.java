@@ -1,4 +1,4 @@
-package Exercises.QuanLyPhuongTien.Entity;
+package Exercises.QuanLyPhuongTien.entity;
 
 public class Bike extends Vehicle  {
     private String power;

@@ -1,6 +1,6 @@
-package Exercises.QuanLyPhuongTien.Service;
+package Exercises.QuanLyPhuongTien.service;
 
-import Exercises.QuanLyPhuongTien.Entity.Bike;
+import Exercises.QuanLyPhuongTien.entity.Bike;
 import java.util.List;
 
 public interface IBikeService {

@@ -1,23 +1,24 @@
-package Exercises.QuanLyPhuongTien.View;
+package Exercises.QuanLyPhuongTien.view;
 
-import Exercises.QuanLyPhuongTien.Entity.Bike;
-import Exercises.QuanLyPhuongTien.Service.IBikeService;
+import Exercises.QuanLyPhuongTien.entity.Car;
+import Exercises.QuanLyPhuongTien.entity.CarType;
+import Exercises.QuanLyPhuongTien.service.ICarService;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class BikeView {
+public class CarView {
 
     private final Scanner sc = new Scanner(System.in);
-    private final IBikeService BikeService;
+    private final ICarService carService;
 
-    public BikeView(IBikeService BikeService) {
-        this.BikeService = BikeService;
+    public CarView(ICarService carService) {
+        this.carService = carService;
     }
     public void showMenu() {
         boolean check = true;
         while (check) {
-            System.out.println("----QUAN LY XE MAY----" +
+            System.out.println("----QUAN LY OTO----" +
                     "\n1.Danh Sach" +
                     "\n2.Them Moi" +
                     "\n3.Tim Xe" +
@@ -34,19 +35,19 @@ public class BikeView {
             }
             switch (choice) {
                 case 1: {
-                    List<Bike> Bikes = BikeService.getAll();
-                    if (Bikes.isEmpty()) {
+                    List<Car> cars = carService.getAll();
+                    if (cars.isEmpty()) {
                         System.out.println("Danh sach trong!");
                     } else {
-                        for (Bike c : Bikes) {
+                        for (Car c : cars) {
                             System.out.println(c);
                         }
                     }
                     break;
                 }
                 case 2: {
-                    Bike Bike = inputBike();
-                    if (BikeService.add(Bike)) {
+                    Car car = inputCar();
+                    if (carService.add(car)) {
                         System.out.println("Them thanh cong!");
                     } else {
                         System.out.println("Bien so da ton tai, them that bai!");
@@ -55,7 +56,7 @@ public class BikeView {
                 }
                 case 3: {
                     String plate = inputLicensePlate();
-                    Bike found = BikeService.findByLicensePlate(plate);
+                    Car found = carService.findByLicensePlate(plate);
                     if (found == null) {
                         System.out.println("Khong tim thay xe!");
                     } else {
@@ -65,7 +66,7 @@ public class BikeView {
                 }
                 case 4: {
                     String plate = inputLicensePlate();
-                    if (BikeService.removeByLicensePlate(plate)) {
+                    if (carService.removeByLicensePlate(plate)) {
                         System.out.println("Xoa thanh cong!");
                     } else {
                         System.out.println("Khong tim thay xe de xoa!");
@@ -82,21 +83,21 @@ public class BikeView {
         System.out.println("----KET THUC----");
     }
 
-    private Bike inputBike() {
-        Bike bike = new Bike();
-        bike.setLicensePlate(inputLicensePlate());
+    private Car inputCar() {
+        Car car = new Car();
+        car.setLicensePlate(inputLicensePlate());
 
         System.out.print("Nhap hang xe: ");
-        bike.setBrand(sc.nextLine().trim());
+        car.setBrand(sc.nextLine().trim());
 
-        bike.setProduction(inputInt("Nhap nam san xuat: "));
+        car.setProduction(inputInt("Nhap nam san xuat: "));
 
         System.out.print("Nhap chu so huu: ");
-        bike.setOwner(sc.nextLine().trim());
+        car.setOwner(sc.nextLine().trim());
 
-        System.out.print("Nhap cong suat: ");
-        bike.setPower(sc.nextLine().trim());
-        return bike;
+        car.setchair(inputInt("Nhap so cho ngoi: "));
+        car.setCarType(inputCarType());
+        return car;
     }
 
     private String inputLicensePlate() {
@@ -112,6 +113,22 @@ public class BikeView {
             } catch (NumberFormatException e) {
                 System.out.println("Vui long nhap so nguyen!");
             }
+        }
+    }
+
+    private CarType inputCarType() {
+        while (true) {
+            System.out.println("Chon loai xe:" +
+                    "\n1.Du lich" +
+                    "\n2.Khach");
+            System.out.print("Lua chon: ");
+            String input = sc.nextLine().trim();
+            if (input.equals("1")) {
+                return CarType.DU_LICH;
+            } else if (input.equals("2")) {
+                return CarType.KHACH;
+            }
+            System.out.println("Khong hop le, nhap lai!");
         }
     }
 }

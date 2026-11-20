@@ -1,4 +1,4 @@
-package Exercises.QuanLyPhuongTien.Entity;
+package Exercises.QuanLyPhuongTien.entity;
 
 public enum CarType {
     DU_LICH("Du lịch"),

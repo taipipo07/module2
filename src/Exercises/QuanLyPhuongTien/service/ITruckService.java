@@ -1,6 +1,6 @@
-package Exercises.QuanLyPhuongTien.Service;
+package Exercises.QuanLyPhuongTien.service;
 
-import Exercises.QuanLyPhuongTien.Entity.Truck;
+import Exercises.QuanLyPhuongTien.entity.Truck;
 import java.util.List;
 
 public interface ITruckService {

@@ -1,11 +1,11 @@
-package Exercises.QuanLyPhuongTien.Repository;
+package Exercises.QuanLyPhuongTien.service;
 
-import Exercises.QuanLyPhuongTien.Entity.Car;
+import Exercises.QuanLyPhuongTien.entity.Car;
 import java.util.List;
 
-public interface ICarRepository {
+public interface ICarService {
     List<Car> getAll();
-    void add(Car car);
+    boolean add(Car car);
     Car findByLicensePlate(String licensePlate);
     boolean removeByLicensePlate(String licensePlate);
 }

@@ -1,4 +1,4 @@
-package Exercises.QuanLyPhuongTien.Entity;
+package Exercises.QuanLyPhuongTien.entity;
 
 public class Car extends Vehicle {
     private int chair = 4;

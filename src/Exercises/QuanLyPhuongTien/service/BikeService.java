@@ -1,7 +1,7 @@
-package Exercises.QuanLyPhuongTien.Service;
+package Exercises.QuanLyPhuongTien.service;
 
-import Exercises.QuanLyPhuongTien.Entity.Bike;
-import Exercises.QuanLyPhuongTien.Repository.IBikeRepository;
+import Exercises.QuanLyPhuongTien.entity.Bike;
+import Exercises.QuanLyPhuongTien.repository.IBikeRepository;
 import java.util.List;
 
 public class BikeService implements IBikeService {
